@@ -1,15 +1,23 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import './core.css'
 import Video from '../video/sea.mp4'
 export const Home = () => {
     return(
         <div className='main'>
+            <video src={Video} autoPlay loop muted className='video'></video>   
 
-            <video src={Video} autoPlay loop muted className='video'></video>
 
             <div className="block">
-                <h1>О нас</h1>
-                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam illum tempora amet dolor beatae, suscipit nesciunt quibusdam quaerat odit maiores nemo architecto. Hic fugiat ad pariatur eum eaque molestias rem numquam placeat? Quo quisquam illo perferendis harum. Eos modi porro aliquid fuga? Error quam, laudantium exercitationem officiis laborum impedit quidem illo enim ipsum soluta temporibus modi corrupti praesentium cupiditate sint cumque magnam vero cum asperiores officia commodi. Aut, in eum.
+                <h1 className='title'>О обо мне</h1>
+                <span className='content'>Здравствуйте, меня зовут Азамат Мустапакулов, и я ищу возможность применить свои навыки программирования в профессиональной среде. Возраст - 16 лет, и я активно занимаюсь программированием в течение последних 6 месяцев, что позволило мне овладеть языками программирования, такими как HTML, CSS, SASS, JavaScript и React.
+                </span>
+                <span className='content'>
+                Я горжусь своими достижениями и стремлением к профессиональному росту в области разработки. Я ищу возможность присоединиться к команде, где смогу применить свои навыки и продолжить учиться под руководством опытных профессионалов. Моя цель - внести вклад в проекты, развивать свои компетенции и достигать выдающихся результатов.
+         ``       </span>
+                <span className='content'>
+                С нетерпением ожидаю возможности обсудить, как я могу принести пользу вашей компании и принять участие в интересных проектах.
+                <Link to='/portfolio'>Чтобы узнать обо мне еще подробнее нажмите на текст!</Link>
                 </span>
             </div>
         </div>
