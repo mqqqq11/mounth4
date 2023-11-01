@@ -33,7 +33,7 @@ img {
 
 .block {
   padding-top: 40px;
-  width: 600px;
+  background: #ffffff73;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
